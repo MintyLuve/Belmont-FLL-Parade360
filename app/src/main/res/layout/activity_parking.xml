@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ParkingActivity">
 
+    <TextView
+        android:id="@+id/paradeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking"
+        android:textSize="50sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nextPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        />
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Back"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toBottomOf="@+id/paradeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="50dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

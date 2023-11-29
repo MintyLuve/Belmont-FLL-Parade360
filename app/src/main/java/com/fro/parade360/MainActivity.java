@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button icon;
+    ImageButton icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        icon = (Button) findViewById(R.id.icon);
+        icon = (ImageButton) findViewById(R.id.icon);
 
         icon.setOnClickListener(new View.OnClickListener() {
             @Override

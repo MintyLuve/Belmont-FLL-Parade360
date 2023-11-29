@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/nextPage"
+        android:id="@+id/icon"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:text="Icon Here"
@@ -27,7 +27,7 @@
         android:text="Parade-360!"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/nextPage"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

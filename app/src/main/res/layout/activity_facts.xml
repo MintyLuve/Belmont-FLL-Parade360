@@ -15,14 +15,14 @@
         android:textSize="50sp"
         android:fontFamily="casual"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nextPage"
+        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="250dp"
         />
     <Button
-        android:id="@+id/nextPage"
+        android:id="@+id/back"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="Back"

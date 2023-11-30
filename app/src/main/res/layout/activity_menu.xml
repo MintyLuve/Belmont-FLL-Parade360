@@ -84,10 +84,18 @@
                 android:contentDescription="sound"
                 app:layout_constraintTop_toBottomOf="@id/toTiming" />
 
+            <ImageButton
+                android:id="@+id/parades"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/menu_parades"
+                app:layout_constraintBottom_toTopOf="@id/bottomImg" />
+
+
             <ImageView
                 android:id="@+id/bottomImg"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="90dp"
                 android:background="@drawable/menu_bottom"
                 app:layout_constraintBottom_toBottomOf="parent" />
 

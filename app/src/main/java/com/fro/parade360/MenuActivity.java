@@ -17,6 +17,7 @@ public class MenuActivity extends AppCompatActivity {
     ImageButton toParking;
     ImageButton toSound;
     ImageButton toTiming;
+    ImageButton parades;
 
 
     @Override
@@ -30,6 +31,7 @@ public class MenuActivity extends AppCompatActivity {
         toParking = (ImageButton) findViewById(R.id.toParking);
         toSound = (ImageButton) findViewById(R.id.toSound);
         toTiming = (ImageButton) findViewById(R.id.toTiming);
+        parades = (ImageButton) findViewById(R.id.parades) ;
 
 
         toDrone.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +63,12 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), TimingActivity.class));
+            }});
+
+        parades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), DroneActivity.class));
             }});
     }
 }

@@ -1,98 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/menu_page">
 
-    <TextView
-        android:id="@+id/paradeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Main Page"
-        android:textSize="50sp"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/toParking"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
-        />
     <Button
         android:id="@+id/toParking"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
+        android:layout_width="255dp"
+        android:layout_height="85dp"
         android:text="To Page: Parking"
         android:textSize="30sp"
         android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/paradeText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/toFood"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         />
     <Button
         android:id="@+id/toFood"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
         android:text="To Page: Food Services"
         android:textSize="30sp"
         android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/toParking"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
         />
-    <Button
-        android:id="@+id/toFacts"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:text="To Page: Float Facts"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/toFood"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
-        />
-    <Button
-        android:id="@+id/toSound"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:text="To Page: Sound Control"
-        android:textSize="28sp"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/toFacts"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
 
-        />
-    <Button
-        android:id="@+id/toTiming"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:text="To Page: Timing"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/toSound"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
-        />
     <Button
         android:id="@+id/toDrone"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
         android:text="To Page: Viewing"
         android:textSize="30sp"
         android:fontFamily="casual"
-        app:layout_constraintTop_toBottomOf="@+id/toTiming"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/toFacts"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:text="To Page: Float Facts"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        />
+
+    <Button
+        android:id="@+id/toTiming"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:text="To Page: Timing"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        />
+
+    <Button
+        android:id="@+id/toSound"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:text="To Page: Sound Control"
+        android:textSize="28sp"
+        android:fontFamily="casual"
+        />
+
+
+</LinearLayout>

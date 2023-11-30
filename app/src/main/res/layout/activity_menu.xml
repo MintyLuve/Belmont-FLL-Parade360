@@ -8,59 +8,90 @@
     android:orientation="vertical"
     android:background="@drawable/menu_page">
 
-    <Button
-        android:id="@+id/toParking"
-        android:layout_width="255dp"
-        android:layout_height="85dp"
-        android:text="To Page: Parking"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        android:layout_marginTop="70dp"
-        />
-    <Button
-        android:id="@+id/toFood"
-        android:layout_width="255dp"
-        android:layout_height="50dp"
-        android:text="To Page: Food Services"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/toDrone"
-        android:layout_width="255dp"
-        android:layout_height="50dp"
-        android:text="To Page: Viewing"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        />
+            <Button
+                android:id="@+id/toParking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Parking"
+                android:textSize="30sp"
+                android:fontFamily="casual"
+                android:layout_weight="1"
+                android:layout_marginTop="70sp"
+                />
+            <Button
+                android:id="@+id/toFood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Food"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                />
 
-    <Button
-        android:id="@+id/toFacts"
-        android:layout_width="255dp"
-        android:layout_height="60dp"
-        android:text="To Page: Float Facts"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        />
+            <Button
+                android:id="@+id/toDrone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Viewing"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                />
 
-    <Button
-        android:id="@+id/toTiming"
-        android:layout_width="255dp"
-        android:layout_height="48dp"
-        android:text="To Page: Timing"
-        android:textSize="30sp"
-        android:fontFamily="casual"
-        />
+            <Button
+                android:id="@+id/toFacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Facts"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                />
 
-    <Button
-        android:id="@+id/toSound"
-        android:layout_width="255dp"
-        android:layout_height="60dp"
-        android:text="To Page: Sound Control"
-        android:textSize="28sp"
-        android:fontFamily="casual"
-        />
+            <Button
+                android:id="@+id/toTiming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Timing"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                />
+
+            <Button
+                android:id="@+id/toSound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To Page: Sound"
+                android:textSize="28sp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <!-- Right side spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

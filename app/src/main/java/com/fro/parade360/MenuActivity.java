@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MenuActivity extends AppCompatActivity {
 
     //declaring Buttons
-    Button toDrone;
-    Button toFacts;
-    Button toFood;
-    Button toParking;
-    Button toSound;
-    Button toTiming;
+    ImageButton toDrone;
+    ImageButton toFacts;
+    ImageButton toFood;
+    ImageButton toParking;
+    ImageButton toSound;
+    ImageButton toTiming;
 
 
     @Override
@@ -23,12 +24,12 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         //initiating buttons
-        toDrone = (Button) findViewById(R.id.toDrone);
-        toFacts = (Button) findViewById(R.id.toFacts);
-        toFood = (Button) findViewById(R.id.toFood);
-        toParking = (Button) findViewById(R.id.toParking);
-        toSound = (Button) findViewById(R.id.toSound);
-        toTiming = (Button) findViewById(R.id.toTiming);
+        toDrone = (ImageButton) findViewById(R.id.toDrone);
+        toFacts = (ImageButton) findViewById(R.id.toFacts);
+        toFood = (ImageButton) findViewById(R.id.toFood);
+        toParking = (ImageButton) findViewById(R.id.toParking);
+        toSound = (ImageButton) findViewById(R.id.toSound);
+        toTiming = (ImageButton) findViewById(R.id.toTiming);
 
 
         toDrone.setOnClickListener(new View.OnClickListener() {

@@ -8,19 +8,40 @@
 
     <TextView
         android:id="@+id/paradeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text="Parade Float Facts"
         android:textAlignment="center"
-        android:textSize="50sp"
+        android:autoSizeTextType="uniform"
         android:fontFamily="casual"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="250dp"
         />
+
+    <ImageButton
+        android:id="@+id/dreamworks"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="icon"
+        android:background="@drawable/float_icon_dreamworks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Dreamworks Float Facts"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dreamworks"/>
+
     <Button
         android:id="@+id/back"
         android:layout_width="150dp"

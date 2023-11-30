@@ -12,88 +12,84 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_height="match_parent"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:baselineAligned="false"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/topImg"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:background="@drawable/menu_top"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/toParking"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                app:layout_constrainedHeight="true"
-                android:background="@drawable/menu_parking"
                 android:layout_weight="1"
+                android:background="@drawable/menu_parking"
                 android:contentDescription="parking"
-                app:layout_constraintTop_toBottomOf="@id/topImg"
-                />
+                app:layout_constrainedHeight="true"
+                app:layout_constraintTop_toBottomOf="@id/topImg" />
+
             <ImageButton
                 android:id="@+id/toFood"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/menu_food"
                 android:layout_weight="1"
-                android:fontFamily="casual"
+                android:background="@drawable/menu_food"
                 android:contentDescription="food"
-                app:layout_constraintTop_toBottomOf="@id/toParking"
-                />
+                android:fontFamily="casual"
+                app:layout_constraintTop_toBottomOf="@id/toParking" />
 
             <ImageButton
                 android:id="@+id/toDrone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/menu_drones"
                 android:layout_weight="1"
+                android:background="@drawable/menu_drones"
                 android:contentDescription="viewing"
-                app:layout_constraintTop_toBottomOf="@id/toFood"
-                />
+                app:layout_constraintTop_toBottomOf="@id/toFood" />
 
             <ImageButton
                 android:id="@+id/toFacts"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:background="@drawable/menu_facts"
                 android:contentDescription="Facts"
-                android:layout_weight="1"
-                app:layout_constraintTop_toBottomOf="@id/toDrone"
-                />
+                app:layout_constraintTop_toBottomOf="@id/toDrone" />
 
             <ImageButton
                 android:id="@+id/toTiming"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/menu_times"
                 android:layout_weight="1"
+                android:background="@drawable/menu_times"
                 android:contentDescription="times"
-                app:layout_constraintTop_toBottomOf="@id/toFacts"
-                />
+                app:layout_constraintTop_toBottomOf="@id/toFacts" />
 
             <ImageButton
                 android:id="@+id/toSound"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/menu_sound"
                 android:layout_weight="1"
+                android:background="@drawable/menu_sound"
                 android:contentDescription="sound"
-                app:layout_constraintTop_toBottomOf="@id/toTiming"
-                />
+                app:layout_constraintTop_toBottomOf="@id/toTiming" />
+
             <ImageView
                 android:id="@+id/bottomImg"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@drawable/menu_bottom"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

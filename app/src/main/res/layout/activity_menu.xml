@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -26,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:background="@drawable/menu_top"
+                android:layout_weight="1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
@@ -88,6 +89,8 @@
                 android:id="@+id/parades"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="parades"
                 android:background="@drawable/menu_parades"
                 app:layout_constraintBottom_toTopOf="@id/bottomImg" />
 
@@ -96,10 +99,11 @@
                 android:id="@+id/bottomImg"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
+                android:layout_weight="1"
                 android:background="@drawable/menu_bottom"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
         <!-- Right side spacer -->
         <View
